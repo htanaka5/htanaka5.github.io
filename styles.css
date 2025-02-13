@@ -21,7 +21,27 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
+
+  .project-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px; /* Add space between projects */
+  }
+
+  .image-container {
+      flex: 0 0 auto; /* Prevent the image container from growing or shrinking */
+  }
+
+  .content-container {
+      flex: 1; /* Allow the content container to take up remaining space */
+  }
+
+  .projects-list {
+      list-style-type: none; /* Remove default bullet points */
+      padding-left: 0; /* Remove default padding */
+  }
+
   h1, h2, h3 {
     color: #333;
   }
@@ -81,4 +101,9 @@
     gap: 20px;
     margin-bottom: 20px;
     justify-content: center;
+  }
+
+  .resize {
+    width: 300px;
+    height: auto;
   }
